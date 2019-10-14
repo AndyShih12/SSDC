@@ -1,0 +1,51 @@
+c ids of sdd nodes start at 0
+c sdd nodes appear bottom-up, children before parents
+c
+c file syntax:
+c sdd count-of-sdd-nodes
+c F id-of-false-sdd-node
+c T id-of-true-sdd-node
+c L id-of-literal-sdd-node id-of-vtree literal
+c D id-of-decomposition-sdd-node id-of-vtree number-of-elements {id-of-prime id-of-sub}*
+c
+sdd 40
+L 2 2312 -37
+L 3 2314 38
+L 4 2312 37
+F 5
+D 1 2313 2 2 3 4 5
+L 8 2336 -39
+L 9 2338 40
+L 10 2336 39
+D 7 2337 2 8 9 10 5
+L 13 2348 -4071
+L 14 2350 -4072
+L 15 2348 4071
+D 12 2349 2 13 14 15 5
+L 17 2352 -4073
+L 18 2354 4074
+L 19 2352 4073
+D 16 2353 2 17 18 19 5
+L 21 2350 4072
+T 22
+D 20 2349 2 13 21 15 22
+D 11 2351 2 12 16 20 5
+L 24 2338 -40
+D 23 2337 2 10 24 8 5
+D 26 2349 2 13 21 15 5
+L 28 2354 -4074
+D 27 2353 2 17 28 19 5
+D 29 2349 2 13 14 15 22
+D 25 2351 2 26 27 29 5
+D 30 2337 2 8 24 10 9
+D 6 2339 3 7 11 23 25 30 5
+L 32 2314 -38
+D 31 2313 2 4 32 2 5
+D 35 2353 2 19 28 17 5
+D 34 2351 2 12 35 20 5
+D 37 2349 2 15 14 13 5
+D 38 2349 2 15 21 13 22
+D 36 2351 2 37 27 38 5
+D 33 2339 3 7 34 23 36 30 5
+D 39 2313 2 2 32 4 3
+D 0 2315 3 1 6 31 33 39 5
