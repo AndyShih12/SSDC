@@ -19,7 +19,9 @@ The SDD package also contains code to extract missing intervals from a structure
 ===============================
 
 SimulateIntervals/ directory contains code that constructs smoothing gates given a set of intervals,
-and compares the near-linear algorithm with the old quadratic algorithm.
+and compares the near-linear algorithm with the old quadratic algorithm. The block sizes for the 
+near-linear algorithm are currently hard-coded, and could be integrated with the code for block size
+calculation in InverseAckermannCalculation/.
 
 ===============================
 
