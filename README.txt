@@ -1,9 +1,10 @@
-This directory contains code for the paper:
+This repository contains code for the paper:
 
 "Smoothing Structured Decomposable Circuits"
 Andy Shih, Guy Van den Broeck, Paul Beame, Antoine Amarilli
 In Advances in Neural Information Processing Systems 32 (NeurIPS), 2019
 
+Instructions on how to run the code in each directory can be found in the README inside the directories.
 
 ===============================
 
@@ -16,12 +17,16 @@ which we downloaded and modified with our new linear-time All-Marginals subrouti
 The unmodified version is in directory WMC/ and the modified version is in directory WMC_fast/
 The SDD package also contains code to extract missing intervals from a structured decomposable circuit (Lemma 1).
 
+The code/datasets in this directory were used to run the experiments in Table 2bcd.
+
 ===============================
 
 SimulateIntervals/ directory contains code that constructs smoothing gates given a set of intervals,
 and compares the near-linear algorithm with the old quadratic algorithm. The block sizes for the 
 near-linear algorithm are currently hard-coded, and could be integrated with the code for block size
 calculation in InverseAckermannCalculation/.
+
+The code in this directory was used to run the experiments in Table 2a.
 
 ===============================
 
