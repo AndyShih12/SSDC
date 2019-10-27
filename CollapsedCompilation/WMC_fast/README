@@ -1,0 +1,13 @@
+SDD Library with a modified Weighted Model Count engine.
+
+Computing derivatives of all variables now takes time O(S+n) instead of O(S*n), where S = size of SDD, n = # of variables.
+
+The changes can be found in the file 'src/sdds/wmc.c' and 'sdd.h'.
+
+Tests can be found in the directory 'test/', and can be invoked by doing:
+
+scons
+cd test
+./run
+
+Andy Shih

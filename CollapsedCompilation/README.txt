@@ -9,7 +9,7 @@ The results will be in the log/ folder, of format "name_size_iter_new.txt" (new 
 For example, "Segmentation_11_400000_1_new.txt" will store the results for the first run on the Segmentation_11 network using the
 new algorithm.
 
-The code for the new algorithm can be found in ../WMC_fast/src/sdds/wmc.c , and the code for the naive algorithm can be found in ../WMC/src/sdds/wmc.c
+The code for the new algorithm can be found in WMC_fast/src/sdds/wmc.c , and the code for the naive algorithm can be found in WMC/src/sdds/wmc.c
 
 The rest of the README is taken directly from the github repo of this paper: "Approximate Knowledge Compilation by Online Collapsed Importance Sampling".
 
